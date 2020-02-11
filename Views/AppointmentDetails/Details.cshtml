@@ -1,0 +1,50 @@
+﻿@model SD1_sk072215_MIS4200.Models.AppointmentDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AppointmentDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Appointment.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Appointment.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Procedure.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Procedure.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qtyProcedure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qtyProcedure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.appointmentDetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

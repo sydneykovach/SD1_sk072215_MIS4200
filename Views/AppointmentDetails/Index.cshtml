@@ -1,0 +1,51 @@
+﻿@model IEnumerable<SD1_sk072215_MIS4200.Models.AppointmentDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Appointment.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Procedure.description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.qtyProcedure)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Appointment.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Procedure.description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.qtyProcedure)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.appointmentDetailID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.appointmentDetailID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.appointmentDetailID })
+        </td>
+    </tr>
+}
+
+</table>

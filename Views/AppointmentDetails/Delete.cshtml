@@ -1,0 +1,56 @@
+﻿@model SD1_sk072215_MIS4200.Models.AppointmentDetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AppointmentDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Appointment.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Appointment.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Procedure.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Procedure.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qtyProcedure)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qtyProcedure)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
