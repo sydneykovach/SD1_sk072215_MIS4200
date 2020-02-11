@@ -178,6 +178,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\MISContext\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\AppointmentDetail.cs" />
@@ -255,16 +256,16 @@
     <Content Include="Views\Appointments\Details.cshtml" />
     <Content Include="Views\Appointments\Edit.cshtml" />
     <Content Include="Views\Appointments\Index.cshtml" />
-    <Content Include="Views\Procedures\Create.cshtml" />
-    <Content Include="Views\Procedures\Delete.cshtml" />
-    <Content Include="Views\Procedures\Details.cshtml" />
-    <Content Include="Views\Procedures\Edit.cshtml" />
-    <Content Include="Views\Procedures\Index.cshtml" />
     <Content Include="Views\AppointmentDetails\Create.cshtml" />
     <Content Include="Views\AppointmentDetails\Delete.cshtml" />
     <Content Include="Views\AppointmentDetails\Details.cshtml" />
     <Content Include="Views\AppointmentDetails\Edit.cshtml" />
     <Content Include="Views\AppointmentDetails\Index.cshtml" />
+    <Content Include="Views\Procedures\Create.cshtml" />
+    <Content Include="Views\Procedures\Delete.cshtml" />
+    <Content Include="Views\Procedures\Details.cshtml" />
+    <Content Include="Views\Procedures\Edit.cshtml" />
+    <Content Include="Views\Procedures\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

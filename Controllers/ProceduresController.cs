@@ -47,7 +47,7 @@ namespace SD1_sk072215_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "procedureID,description,procedureCost")] Procedure procedure)
+        public ActionResult Create([Bind(Include = "procedureID,description,procedureCost,doctorID")] Procedure procedure)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace SD1_sk072215_MIS4200.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "procedureID,description,procedureCost")] Procedure procedure)
+        public ActionResult Edit([Bind(Include = "procedureID,description,procedureCost,doctorID")] Procedure procedure)
         {
             if (ModelState.IsValid)
             {
