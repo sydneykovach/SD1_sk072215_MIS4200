@@ -22,13 +22,13 @@ namespace SD1_sk072215_MIS4200.Models
 
         [Display(Name = "Email Address")]
         [Required]
-        [EmailAddress(ErrorMessage = "Email Address is Required for contact")]
+        [EmailAddress(ErrorMessage = "Email Address of Patient is required")]
         public string email { get; set; }
 
         [Display(Name = "Mobile Phone")]
         [DataType(DataType.PhoneNumber)]
         [RegularExpression(@"^(\(\d{3}\) |\d{3}-)\d{3}-\d{4}$",
-            ErrorMessage ="Please type your phone number using the following formats (xxx) xxx-xxxx OR xxx-xxx-xxxx")]
+            ErrorMessage ="Please type the phone number using the following formats (xxx) xxx-xxxx OR xxx-xxx-xxxx")]
         public string phone { get; set; }
 
         [Display(Name = "Date of Registration")]
