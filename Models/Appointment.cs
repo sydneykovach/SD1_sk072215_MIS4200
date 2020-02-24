@@ -14,7 +14,7 @@ namespace SD1_sk072215_MIS4200.Models
         [Key]
         public int appointmentID { get; set; }
 
-        [Display (Name = "What type of Appointment? (consultation, surgery, follow up)")]
+        [Display (Name = "Appointment Type (consultation, surgery, follow up)")]
         [Required]
         public string description { get; set; }
 
