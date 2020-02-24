@@ -7,6 +7,7 @@ namespace SD1_sk072215_MIS4200.Models
 {
     public class Patient
     {
+
         public int PatientId { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }

@@ -10,7 +10,9 @@ namespace SD1_sk072215_MIS4200.Migrations.MISContext
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
-            MigrationsDirectory = @"Migrations\MISContext";
+            AutomaticMigrationDataLossAllowed = true;
+
+             MigrationsDirectory = @"Migrations\MISContext";
             ContextKey = "SD1_sk072215_MIS4200.DAL.MIS4200Context";
         }
 
