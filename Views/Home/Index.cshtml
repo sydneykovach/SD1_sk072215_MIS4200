@@ -3,33 +3,31 @@
 }
 
 <div class="jumbotron">
-    <h1>Sydney Kovach</h1>
-    <p class="lead">MIS 4200 - Information System Consulting Project.</p>
-    <p><a href="https://www.catalogs.ohio.edu/preview_course_nopop.php?catoid=27&coid=129528" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <h1>The Plastic Surgery Group</h1>
+    <p class="lead">Schedule, Organize, and Update appointment information.</p>
+
 </div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Class Overview</h2>
+        <h2>Patient Profile</h2>
         <p>
-            Work in a friendly, team based environment. 
+            Register each patient and record contact information.
         </p>
-        <p><a class="btn btn-default" href="https://www.catalogs.ohio.edu/preview_course_nopop.php?catoid=27&coid=129528">Learn more &raquo;</a></p>
+        @Html.ActionLink("Patients", "Index", "Patients") <br />
     </div>
     <div class="col-md-4">
-        <h2>Value</h2>
-        <p>Provides a refresher on system development techniques before providing students with experience working on an information system consulting/development project using live clients..</p>
-        <p><a class="btn btn-default" href="https://ohiocoblms.azurewebsites.net/login.aspx?ReturnUrl=%2flearn%2fforum.aspx">Learn more &raquo;</a></p>
+        <h2>Appointment Planning</h2>
+        <p>Schedule appointments and select procedure information.</p>
 
-        @Html.ActionLink("Patients", "Index", "Patients") <br />
         @Html.ActionLink("Appointments", "Index", "Appointments")<br />
         @Html.ActionLink("Procedures", "Index", "Procedures")<br />
-        @Html.ActionLink("Appointment Details", "Index", "AppointmentDetails")
+      
 
     </div>
     <div class="col-md-4">
-        <h2>Get in touch</h2>
-        <p>You can find out more about Sydney Kovach on the contact me page or her linkedin.</p>
-        <p><a class="btn btn-default" href="https://linkedin.com/in/sydneykovach">Learn more &raquo;</a></p>
+        <h2>Finalized Invoice</h2>
+        <p>Determine the total pricing based off of appointment type, procedure cost and procedure quantity.</p>
+        @Html.ActionLink("Invoice", "Index", "AppointmentDetails")
     </div>
 </div>

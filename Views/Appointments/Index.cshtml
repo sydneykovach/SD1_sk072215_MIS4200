@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<SD1_sk072215_MIS4200.Models.Appointment>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Appointments";
 }
 
-<h2>Index</h2>
+<h2>Schedule an Appointment</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("New Appointment", "Create")
 </p>
 <table class="table">
     <tr>
@@ -35,9 +35,9 @@
             @Html.DisplayFor(modelItem => item.appointmentDate)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.appointmentID }) |
+            @Html.ActionLink("Reschedule", "Edit", new { id=item.appointmentID }) |
             @Html.ActionLink("Details", "Details", new { id=item.appointmentID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.appointmentID })
+            @Html.ActionLink("Cancel", "Delete", new { id=item.appointmentID })
         </td>
     </tr>
 }
