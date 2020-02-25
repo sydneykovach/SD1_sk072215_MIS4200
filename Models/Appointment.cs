@@ -22,10 +22,13 @@ namespace SD1_sk072215_MIS4200.Models
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:d}", ApplyFormatInEditMode = true)]
         public DateTime appointmentDate { get; set; }
+
+        [Display (Name = "Patient Name")]
+        public int patientId { get; set; }
         public ICollection<AppointmentDetail> AppointmentDetail { get; set; }
 
         
-        public int patientId { get; set; }
+        
        
         public virtual Patient Patient { get; set; }
     }

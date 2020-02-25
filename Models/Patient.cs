@@ -8,6 +8,8 @@ namespace SD1_sk072215_MIS4200.Models
     public partial class Patient
     {
         public System.Guid SID { get; set; }
+
+       
         public int PatientId { get; set; }
 
         [Display(Name = "First Name")]

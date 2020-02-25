@@ -16,18 +16,35 @@
         </p>
         @Html.ActionLink("Patients", "Index", "Patients") <br />
     </div>
-    <div class="col-md-4">
-        <h2>Appointment Planning</h2>
-        <p>Schedule appointments and select procedure information.</p>
 
-        @Html.ActionLink("Appointments", "Index", "Appointments")<br />
-        @Html.ActionLink("Procedures", "Index", "Procedures")<br />
-      
 
-    </div>
-    <div class="col-md-4">
-        <h2>Finalized Invoice</h2>
-        <p>Determine the total pricing based off of appointment type, procedure cost and procedure quantity.</p>
-        @Html.ActionLink("Invoice", "Index", "AppointmentDetails")
-    </div>
-</div>
+
+ 
+        <div class="col-md-4">
+            <h2>Appointment Planning</h2>
+            <p>Schedule appointments and select procedure information.</p>
+
+            <div class="dropdown">
+                <a data-toggle="dropdown" class="dropdown-toggle">
+                    Select Category
+                    <span class="caret"></span>
+
+                </a>
+                <ul class="dropdown-menu">
+                    <li>@Html.ActionLink("Appointments", "Index", "Appointments")</li>
+                    <li> @Html.ActionLink("Procedures", "Index", "Procedures")</li>
+                </ul>
+
+                <br />
+
+            </div>
+
+            </div>
+
+
+      <div class="col-md-4">
+                    <h2>Finalized Invoice</h2>
+                    <p>Determine the total pricing based off of appointment type, procedure cost and procedure quantity.</p>
+                    @Html.ActionLink("Invoice", "Index", "AppointmentDetails")
+                </div>
+            </div>
